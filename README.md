@@ -2,7 +2,7 @@
 
 > A simple Powershell script that copies all changes from one remote to another remote. Variable, fast and very easy to integrate into VS Code Actions! Especially for double repository management.
 
-> [Hier](https://github.com/ScriptWerkstatt/syncSwiftScript?tab=readme-de-ov-file) gibt es die Doku auch auf deutsch.
+> [Hier](https://github.com/ScriptWerkstatt/syncSwiftScript/blob/main/README-de.md) gibt es die Doku auch auf deutsch.
 
 ## Developer
 
@@ -14,11 +14,17 @@
 
 ## Features
 
-- Feature 1
+- Alle Änderungen mit anderem Repository synchronisieren
 
-### Feature 1
+### Alle Änderungen mit anderem Repository synchronisieren
 
-Beschreibung
+You can execute the script directly or integrate it into VS code as a task (see instructions below) in order to reflect all changes to a 2nd remote in a matter of seconds without having to change the branch.
+
+Make sure that you also added the 2nd remote (standard remote is always "origin") (see instructions below)
+
+Then you execute the script (either via VS Code Task or directly in PowerShell) and add the source Remote & the target remote. Finished!
+
+HERE GIF PLACE COMMING SOON
 
 ## Setup (VS Code Action)
 
@@ -28,5 +34,25 @@ Beschreibung
 
 ### Step by step guide (VS Code Action)
 
-1. So setzt du das alles auf
-2. Dann das hier
+1. Open your local repository with VS code and open a terminal / cmd there.
+2. Then add your new remote with the following command:
+
+        git remote add <your remote link hier>
+
+3. Copy the script `syncSwiftScript.ps1` in your repository (e.g. in `./.vscode/syncSwiftScript.ps1`)
+4. After you have to add the task for VS code. Go to the `./.vscode/task.json` direction and integrate the following code (simply look at the detailed VS code documentation if you have any questions):
+
+        {
+            "tasks": [
+                {
+                    "label": "sync swift script",
+                    "type": "shell",
+                    "command": "./.vscode/syncSwiftScript.ps1"
+                }
+            ]
+        }
+
+5. Now just press `f1` or ` Ctrl + Shift + P` to open the command palette and select `Tasks: Run Task`.
+6. Here the new task `sync swift script` should appear. Simply select and proceed as shown in the video:
+
+HERE GIF PLACE COMMING SOON
