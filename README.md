@@ -35,9 +35,9 @@ HERE GIF PLACE COMMING SOON
 ### Step by step guide (VS Code Action)
 
 1. Open your local repository with VS code and open a terminal / cmd there.
-2. Then add your new remote with the following command:
+2. Then add your new remote with the following command e.g.:
 
-        git remote add <your remote link hier>
+        git remote add <your remote name here> <your remote link hier>
 
 3. Copy the script `syncSwiftScript.ps1` in your repository (e.g. in `./.vscode/syncSwiftScript.ps1`)
 4. After you have to add the task for VS code. Go to the `./.vscode/task.json` direction and integrate the following code (simply look at the detailed VS code documentation if you have any questions):
@@ -47,7 +47,8 @@ HERE GIF PLACE COMMING SOON
                 {
                     "label": "sync swift script",
                     "type": "shell",
-                    "command": "./.vscode/syncSwiftScript.ps1"
+                    "command": "./.vscode/syncSwiftScript.ps1",
+                    "problemMatcher": []
                 }
             ]
         }
