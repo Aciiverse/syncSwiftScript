@@ -24,7 +24,7 @@ Make sure that you also added the 2nd remote (standard remote is always "origin"
 
 Then you execute the script (either via VS Code Task or directly in PowerShell) and add the source Remote & the target remote. Finished!
 
-HERE GIF PLACE COMMING SOON
+![syncSwiftScript 400 Preview T](https://github.com/ScriptWerkstatt/syncSwiftScript/assets/107034726/067dc0db-5a44-40f9-b122-4259357e457a)
 
 ## Setup (VS Code Action)
 
@@ -56,4 +56,4 @@ HERE GIF PLACE COMMING SOON
 5. Now just press `f1` or ` Ctrl + Shift + P` to open the command palette and select `Tasks: Run Task`.
 6. Here the new task `sync swift script` should appear. Simply select and proceed as shown in the video:
 
-HERE GIF PLACE COMMING SOON
+![syncSwiftScript 400 Preview T](https://github.com/ScriptWerkstatt/syncSwiftScript/assets/107034726/067dc0db-5a44-40f9-b122-4259357e457a)
