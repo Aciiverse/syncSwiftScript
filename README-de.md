@@ -24,7 +24,7 @@ Vergewissere, dass du vorher den 2. Remote auch hinzugefügt hast (Standard remo
 
 Danach fürst du das Script aus (entweder per VS Code Task oder direkt in PowerShell) und gibst den Source Remote & den Target Remote an. Fertig!
 
-HERE GIF PLACE COMMING SOON
+![syncSwiftScript 400 Preview T](https://github.com/ScriptWerkstatt/syncSwiftScript/assets/107034726/067dc0db-5a44-40f9-b122-4259357e457a)
 
 ## Setup (VS Code Action)
 
@@ -56,4 +56,4 @@ HERE GIF PLACE COMMING SOON
 5. Jetzt einfach `F1` oder `Strg + Shift + P` drücken um die Befehlspalette zu öffnen und `Tasks: Run Task` auswählen.
 6. Hier sollte die neue Task `sync swift script` dann auftauchen. Einfach auswählen und wie im Video gezeigt vorgehen:
 
-HERE GIF PLACE COMMING SOON
+![syncSwiftScript 400 Preview T](https://github.com/ScriptWerkstatt/syncSwiftScript/assets/107034726/067dc0db-5a44-40f9-b122-4259357e457a)
